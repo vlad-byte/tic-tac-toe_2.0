@@ -1,0 +1,64 @@
+{% extends 'main.html' %}
+
+{% block title %}4x4{% endblock %}
+
+{% block content %}
+            <div style="display: flex;flex-direction: column;gap: 0px 0px;margin: 30px auto 0px;position: sticky;width: 41.03%;">
+                <div class="flex_row1" style="left: 15%;margin-top:-34%;margin-bottom:4%;">
+                    <div class="cell5">
+                        <a href="{{ url_for('play4', board=board, command='1', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[0]}}</h1></a>
+                    </div>
+                    <div class="cell6" style="margin-top:26%;">
+                        <a href="{{ url_for('play4', board=board, command='5', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[4]}}</h1></a>
+                    </div>
+                    <div class="cell7" style="margin-top:52%;">
+                        <a href="{{ url_for('play4', board=board, command='9', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[8]}}</h1></a>
+                    </div>
+                    <div class="cell8" style="margin-top:78%;">
+                        <a href="{{ url_for('play4', board=board, command='13', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[12]}}</h1></a>
+                    </div>
+                    <div class="cell10">
+                        <a href="{{ url_for('play4', board=board, command='2', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[1]}}</h1></a>
+                    </div>
+                    <div class="cell11" style="margin-top:26%;">
+                        <a href="{{ url_for('play4', board=board, command='6', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[5]}}</h1></a>
+                    </div>
+                    <div class="cell12" style="margin-top:52%;">
+                        <a href="{{ url_for('play4', board=board, command='10', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[9]}}</h1></a>
+                    </div>
+                    <div class="cell13" style="margin-top:78%;">
+                        <a href="{{ url_for('play4', board=board, command='14', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[13]}}</h1></a>
+                    </div>
+                    <div class="cell15">
+                        <a href="{{ url_for('play4', board=board, command='3', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[2]}}</h1></a>
+                    </div>
+                    <div class="cell16" style="margin-top:26%;">
+                        <a href="{{ url_for('play4', board=board, command='7', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[6]}}</h1></a>
+                    </div>
+                    <div class="cell17" style="margin-top:52%;">
+                        <a href="{{ url_for('play4', board=board, command='11', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[10]}}</h1></a>
+                    </div>
+                    <div class="cell18" style="margin-top:78%;">
+                        <a href="{{ url_for('play4', board=board, command='15', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[14]}}</h1></a>
+                    </div>
+                    <div class="cell20">
+                        <a href="{{ url_for('play4', board=board, command='4', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[3]}}</h1></a>
+                    </div>
+                    <div class="cell21" style="margin-top:26%;">
+                        <a href="{{ url_for('play4', board=board, command='8', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[7]}}</h1></a>
+                    </div>
+                    <div class="cell22" style="margin-top:52%;">
+                        <a href="{{ url_for('play4', board=board, command='12', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[11]}}</h1></a>
+                    </div>
+                    <div class="cell23" style="margin-top:78%;">
+                        <a href="{{ url_for('play4', board=board, command='16', status=status) }}" type="button" class="btn btn-warning" style=" background-color: #ffe2aa;display: grid; width: 80px; height: 80px;flex-grow: 1;margin: 0px 0px 0px;outline: 2px solid #daa453;outline-offset: -2px;position: relative;"><h1 class="hero_title2">{{board[15]}}</h1></a>
+                    </div>
+                </div>
+                <div class="flex_row2">
+                    <h3 class="subtitle1">Для удаления<br />нажмите ещё раз</h3>
+                    <div class="spacer"></div>
+                    <h3 class="subtitle11">{{status}}</h3>
+                </div>
+                <a href="{{ url_for('hello') }}" type="button" class="btn btn-warning" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 200px; height: 50px;background-color: #c84500;border-radius: 10px 10px 10px 10px;display: grid;margin: 45px 0px 0px;position: relative;"><h2 class="highlight">Начать заново</h2></a>
+            </div>
+{% endblock %}

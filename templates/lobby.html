@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block title %}Меню{% endblock %}
+
+{% block content %}
+   <div style="display: flex;flex-direction: column;gap: 0px 0px;margin: 30px auto 0px;position: relative;width: 39.1%;">
+       <h1 class="hero_title11">
+            Приветствуем Вас в улучшенной версии
+            популярной игры Крестики-Нолики, для
+            начала игры выберите уровень сложности
+        </h1>
+        <div style="display: flex;flex-direction: column;margin: 0px auto 0px;position: relative;width: 41.03%;">
+            <a href="{{ url_for('play3', board='         ', command='0', status='Ходов осталось: 3') }}" type="button" class="btn btn-warning" style="background-color: #c84500;border-radius: 10px 10px 10px 10px;display: grid;margin: 25px 0px 0px;position: relative;"><h2 class="medium_title">3x3</h2></a>
+            <a href="{{ url_for('play4', board='                ', command='0', status='Ходов осталось: 5') }}" type="button" class="btn btn-warning" style="background-color: #c84500;border-radius: 10px 10px 10px 10px;display: grid;margin: 25px 0px 0px;position: relative;"><h2 class="medium_title">4x4</h2></a>
+            <a href="{{ url_for('play5', board='                         ', command='0', status='Ходов осталось: 7') }}" type="button" class="btn btn-warning" style="background-color: #c84500;border-radius: 10px 10px 10px 10px;display: grid;margin: 25px 0px 50px;position: relative;"><h2 class="medium_title">5x5</h2></a>
+        </div>
+    </div>
+{% endblock %}
